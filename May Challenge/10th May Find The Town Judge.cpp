@@ -1,4 +1,4 @@
-//Based on indegree and outdegree concept
+//Based on indegree and outdegree concept and similar to celebrity Problem
 class Solution {
 public:
     int findJudge(int n, vector<vector<int>>& trust) {
