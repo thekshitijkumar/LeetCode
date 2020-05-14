@@ -1,3 +1,4 @@
+//here given a number we have to remove k digits such that the formed number is the smallest possible.
 class Solution {
 public:
    
