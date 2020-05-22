@@ -27,3 +27,40 @@ public:
         
     }
 };
+
+
+
+//Using priority Queue
+
+class Solution {
+public:
+   
+    string frequencySort(string s) {
+        unordered_map<char,int> m;
+        for(int i=0;i<s.length();i++)
+        {
+            m[s[i]]++;
+        }
+        
+        priority_queue<pair<int,char>> pq;//max heap
+        for(auto i=m.begin();i!=m.end();i++)
+        {
+            pq.push({i->second,i->first});
+        }
+        string st="";
+        while(!pq.empty())
+        {
+            pair<int,char> p=pq.top();
+            int n=p.first;
+            while(n--)
+            {
+                st+=p.second;
+                
+            }
+            pq.pop();
+        }
+        
+        return st;
+        
+    }
+};
