@@ -23,7 +23,7 @@ public:
     }
 };
 
-//second method using function
+//second method using bits function
 
 class Solution {
 public:
